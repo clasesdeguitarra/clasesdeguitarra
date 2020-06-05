@@ -241,7 +241,7 @@ $(function(){
 $(document).ready(function () {
 
     if (window.location.href.includes("#123")) {
-        var allHref = $("a[href^='https://tuentrepiso.github.io']");
+        var allHref = $("a[href^='https://clasesdeguitarra.github.io']");
         allHref.each(function () {
             var anHref = $( this ).get(0);
                 anHref.href = anHref.href + "#123"
