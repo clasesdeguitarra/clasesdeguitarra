@@ -4,30 +4,21 @@ var RUNTIME = 'runtime';
 // list the files you want cached by the service worker
 PRECACHE_URLS = [
     'index.html',
-    'portfolio.html',
-    'preguntas.html',
     './',
     'index.html?utm_source=homescreen',
     'css/main.min.css',
     'css/hamburgers.spin.min.css',
     'js/index-post-jq.js',
-    'js/portfolio-post-jq.js',
-    'js/preguntas-post-jq.js',
     'js/js-index-loader.js',
-    'js/js-portfolio-loader.js',
-    'js/js-preguntas-loader.js',
-    'js/main-min.js',
-    'fotos/no_image.jpg',
-    'fotos/Entrepiso_1.jpg',
-    'fotos/Entrepiso_2.jpg',
-    'fotos/Entrepiso_3.jpg',
-    'fotos/Entrepiso_4.jpg',
-    'fotos/Entrepiso_5.jpg',
-    'fotos/Entrepiso_6.jpg',
-    'fotos/Entrepiso_7.jpg',
-    'fotos/Entrepiso_8.jpg',
-    'fotos/Entrepiso_principal2.webp',
-    'fotos/Entrepiso_principal2.jpg'
+    'js/main.min.js',
+  //  'fotos/no_image.jpg',
+    'fotos/nacho.JPG',
+    'fotos/nacho1.jpg',
+    'fotos/nacho2.jpg',
+    'fotos/nacho3.jpg',
+    'fotos/nacho4.jpg',
+    'fotos/fondo_principal.webp',
+    'fotos/fondo_principal.png'
 
 ];
 

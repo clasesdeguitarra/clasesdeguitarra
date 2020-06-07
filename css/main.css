@@ -266,7 +266,7 @@ body, html {
 }
 
 .webp .bgimg-2 {
-    background-image: url('../fotos/fondo_secundario.png');
+    background-image: url('../fotos/fondo_secundario.webp');
 }
 
 .bgimg-2 {
@@ -282,7 +282,7 @@ body, html {
 }
 
 .webp .bgimg-3 {
-    background-image: url('../fotos/fondo_terciario.jpg');
+    background-image: url('../fotos/fondo_terciario.webp');
 }
 
 .bgimg-3 {

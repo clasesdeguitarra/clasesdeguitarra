@@ -24,7 +24,6 @@ clases guitarra criolla, clases guitarra acustica, profesor de guitarra Buenos A
 <!--<link rel="shortcut icon" href="fotos/favicon.png" type="image/x-icon">-->
  <link rel="icon" href="demo_icon.png" type="image/png" sizes="16x16">
  <meta name="theme-color" content="#01579B">
- <script src="js/js-index-loader.js" async></script>
 
 <!--CSS PRINCIPAL-->  
 <style type="text/css">
@@ -67,7 +66,7 @@ h1{font-size:40px}h2{font-size:34px}h3{font-size:24px}h4{font-size:20px}h5{font-
 }
 	
 .no-webp .bgimg-1 {  background-image: url('fotos/fondo_principal.png');}
-.webp .bgimg-1 {   background-image: url('fotos/fondo_principal.png');}
+.webp .bgimg-1 {   background-image: url('fotos/fondo_principal.webp');}
 	
   /* Create a Parallax Effect */
   .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -258,24 +257,26 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 
 
       <br/> 
-      <h2 class="w3-center ">¿Querés aprender a tocar pero no te animas?</h2>
-      <h2 class="w3-center ">¿Querés mejorar tu técnica?</h2>
+      <h2 class="w3-center ">¿Querés aprender a tocar pero no te animas? <br/> ¿Querés mejorar tu técnica?</h2>
 
   <h3 class="w3-center w3-med">
      Aprende a tocar la Guitarra <!--🎸🎶-->
   </h3>
     <br/>
    <p class="w3-center w3-container " ><em>
-  Clases presenciales, por 
-    <a target="_blank" href="https://zoom.us/" rel="noreferrer" >
-          <img style="width: 50px;" src="css/zoom.svg" alt="zoom" title="zoom"/></a>, 
+    Clases por 
+      <a target="_blank" href="https://zoom.us/" rel="noreferrer" >
+        <img style="width: 50px;" src="css/zoom.svg" alt="zoom" title="zoom"/></a>, 
           videollamada de 
-    <a target="_blank" href="https://www.whatsapp.com/" rel="noreferrer" style="color: green">Whatsapp
-          <img style="width: 20px;" src="css/whatsapp.svg" alt="whatsapp" title="whatsapp"/></a>, 
-            o por 
+        <a target="_blank" href="https://wa.me/5491151144197?text=Hola, me interesa saber sobre las clases de guitarra" rel="noreferrer" style="color: green">
+          Whatsapp
+      <i id="wpp-class" class="fab fa-whatsapp my-float" alt="whatsapp" title="whatsapp" style="font-size: 20px;" ></i></a>, 
+             por 
     <a target="_blank" href="https://www.skype.com/es/" rel="noreferrer" style="color: dodgerblue">
             Skype  
-          <img style="width: 20px;" src="css/skype.svg" alt="skype" title="skype"/></a> 
+          <i id="skype-class" class="fab fa-skype my-float" alt="skype" title="skype" style="font-size: 20px;" ></i>
+         </a> 
+          o presenciales
         </em>
 </p>
 
@@ -291,7 +292,7 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
   Te voy a enseñar acordes e inversiones en la guitarra, técnica de púa y dedos, improvisación, acompañamiento rítmico,  audioperceptiva (intervalos, escalas acordes), ritmos en diferentes estilos, armonía (formación de escalas y acordes), lectura, escritura, tablatura, teoría musical y muchos temas más. 
 </em></p>
 <p class="w3-center w3-container " >
-  Mis clases están diseñadas para todas las edades y <strong> vas a tocar desde la primer clase!</strong>
+  Mis clases están diseñadas para todas las edades y <strong> vas a tocar desde la primera clase!</strong>
   <br/><br/>
 <i class="material-icons">payment</i>  Medios de pago disponibles: Efectivo, transferencia o Mercado pago.
   <br/>
@@ -341,7 +342,7 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
         </div> 
       </a>
 
-      <a target="_blank" rel="noreferrer" title="instagram divbre NachoFlamenco" href="https://www.instagram.com/guitarra_en_talar/?hl=es-la"  >
+      <a target="_blank" rel="noreferrer" title="instagram NachoFlamenco" href="https://www.instagram.com/guitarra_en_talar/?hl=es-la"  >
         <div class=" social-icon social-icon--instagram">
           <i class="fab fa-instagram w3-hover-opacity "></i>         
           <div class="tooltip w3-animate-zoom"> Instagram</div>
@@ -377,7 +378,7 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
     <div hidden="true" id="templateContainer" class="w3-col m3">
     </div>
     <img hidden="true" id="template"  style="width:100%"
-         class="portfolio-img w3-hover-shadow"
+         class="portfolio-img w3-hover-shadow lazyload"
          title="Imagen de clases de guitarra Capital Federal CABA Lomas de Zamora Zona oeste"
          alt="Imagen de clases de guitarra Capital Federal" >
 
@@ -389,27 +390,14 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
     </div>
   </div>
 
-  <div style=" display: flex; flex-wrap: wrap;" class="w3-row-padding w3-center">
-
-      <iframe style="height:360px" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/T0kaXFw_IL4"></iframe>
-      
-      <video style="height:360px;width: 200px" controls><source src="videos/muestra-quiero ser tu sombra.mp4" type="video/mp4" title="Quiero ser tu sombra">...</video>  
-
-      <iframe style="height:360px" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/ibMSEH4L33Q"></iframe>      
-
+  <div style=" display: flex; flex-wrap: wrap;     min-height: 400px;" class="w3-row-padding w3-center" id="video1-container">
     <!--  <video style="max-height:360px;max-width: 100%;" controls><source src="videos/Jose - All of me muestra 2019.mp4" type="video/mp4" title="All of me">...</video>
-
-      <video style="max-height:360px;max-width: 100%;" controls><source src="videos/la alucinada.mp4" type="video/mp4" title="la alucinada">...</video>
--->
+      <video style="max-height:360px;max-width: 100%;" controls><source src="videos/la alucinada.mp4" type="video/mp4" title="la alucinada">...</video>-->
   </div>
 
   <h3 class="w3-center">Resumen de la Muestra anual de 2019</h3>
-  <div style=" display: flex;">
-    <video class="w3-center" style="width: 100%"  controls>
-      <source src="videos/COMPILADO muestra 2019 .mp4" type="video/mp4" title="compilado muestra 2019">
-      ...
-    </video>
-  </div>
+  
+  <div style=" display: flex; min-height: 190px;" id="video-muestra-container"></div>
 
      <!--boton VER MAS-->
   <div class="w3-row">
@@ -467,7 +455,7 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
     <div class="w3-row">
       <a class="false-href w3-hide-small-no" href="#about">
         <div class="w3-col m4 w3-center w3-padding-large">
-          <img src="fotos/nacho.JPG" class="w3-round w3-image s w3-hover-opacity-off" alt="Nacho Rocca" width="300"
+          <img data-src="fotos/nacho.JPG" class="w3-round w3-image s w3-hover-opacity-off lazyload" alt="Nacho Rocca" width="300"
                height="400">
         </div>
       </a>
@@ -485,7 +473,7 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
       </div>
 
     </div>
-    <div class="w3-row w3-padding-large">
+    <div class="w3-row w3-padding-large w3-hide-small">
       Sus referentes en la guitarra flamenca: Sabicas, Manolo Sanlucar, Paco de Lucia, Tomatito, Gerardo Núñez, Vicente Amigo, Niño Miguel , Chicuelo entre algunos de ellos.
         <br/>
       Guitarra eléctrica: Jimi Hendrix, George Benson, Paul Gilbert, Steve Vai, Joe Satriani, Joe Pass, Eric Clapton, Luis Salinas, Scott Henderson, Frank Gambale, Walter Giardino, Tano Marciello, Yngwie Malmsteen, Kiko Loureiro, Al Di Meola, Greg Howe, Tommy Emmanuel.
@@ -493,9 +481,7 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
     <!-- About Section -->
     <div class="w3-container" id="aboutInformation">
 
-      <div style=" display: flex; justify-content: center;">
-        <iframe  class="w3-center" style="width:60%;height:345px" src="https://www.youtube.com/embed/eFTkzCQol0M">
-        </iframe>
+      <div style=" display: flex; justify-content: center;  min-height: 345px;" id="video-of-me-container" >
       </div>
 
     </div>
@@ -621,7 +607,9 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
    <!--Footer selection-->
    <!--///////////////////////////////////////////////////////-->
 
+    <script src="js/lazysizes.min.js" async></script>
 
+    <script src="js/js-index-loader.js" async></script>
 
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
