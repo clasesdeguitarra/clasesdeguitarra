@@ -118,12 +118,12 @@ function loadImgs(position, offset) {
         $("#imgContainter").append(div);
     }
       
-        $("#video1-container").append('<iframe style="height:360px" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/T0kaXFw_IL4"></iframe> ');
+        $("#video1-container").append('<iframe title="video tocando guitarra" style="height:360px" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/T0kaXFw_IL4"></iframe> ');
         $("#video1-container").append(' <video style="height:360px;width: 200px" controls><source src="videos/muestra-quiero ser tu sombra.mp4" type="video/mp4" title="Quiero ser tu sombra">...</video>  ');
-        $("#video1-container").append('<iframe style="height:360px" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/ibMSEH4L33Q"></iframe> ');
+        $("#video1-container").append('<iframe title="video tocando guitarra" style="height:360px" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/ibMSEH4L33Q"></iframe> ');
         $("#video-muestra-container").append('    <video class="w3-center" style="width: 100%"  controls>      <source src="videos/COMPILADO muestra 2019 .mp4" type="video/mp4" title="compilado muestra 2019">  ...</video>');
 
-        $("#video-of-me-container").append('<iframe  class="w3-center" style="width:60%;height:345px" src="https://www.youtube.com/embed/eFTkzCQol0M"></iframe>');
+        $("#video-of-me-container").append('<iframe title="video tocando guitarra" class="w3-center" style="width:60%;height:345px" src="https://www.youtube.com/embed/eFTkzCQol0M"></iframe>');
 
 }
 
