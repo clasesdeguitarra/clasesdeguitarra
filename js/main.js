@@ -118,6 +118,7 @@ function loadImgs(position, offset) {
         $("#imgContainter").append(div);
     }
       
+        $("#video1-container").append(' <video style="width: 300px;max-height: 315px;" controls><source src="videos/leila.mp4" type="video/mp4" title="leila clapton">...</video>  ');
         $("#video1-container").append('<iframe title="video tocando guitarra" style="height:360px" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/T0kaXFw_IL4"></iframe> ');
         $("#video1-container").append(' <video style="height:360px;width: 200px" controls><source src="videos/muestra-quiero ser tu sombra.mp4" type="video/mp4" title="Quiero ser tu sombra">...</video>  ');
         $("#video1-container").append('<iframe title="video tocando guitarra" style="height:360px" allowfullscreen="allowfullscreen" src="https://www.youtube.com/embed/ibMSEH4L33Q"></iframe> ');
